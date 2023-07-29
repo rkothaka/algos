@@ -1,4 +1,4 @@
-from mysort import MySort
+from b_sorting.mysort import MySort
 
 
 class ShellSort(MySort):

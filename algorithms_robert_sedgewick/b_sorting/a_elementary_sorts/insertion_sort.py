@@ -1,4 +1,4 @@
-from b_sorting.a_elementary_sorts.mysort import MySort
+from b_sorting.mysort import MySort
 
 
 class InsertionSort(MySort):
