@@ -1,8 +1,10 @@
-class Merge:
+from b_sorting.mysort import MySort
+
+
+class Merge(MySort):
     aux = None
 
-    @staticmethod
-    def sort(a):
+    def sort(self, a):
         def merge(lo, mid, hi):
             i, j = lo, mid + 1
             Merge.aux[lo: hi + 1] = a[lo: hi + 1]
@@ -14,7 +16,7 @@ class Merge:
                 elif j > hi:
                     a[k: hi + 1] = Merge.aux[i: mid + 1]
                     break
-                elif Merge.aux[j] < Merge.aux[i]:
+                elif self.less(Merge.aux[j], Merge.aux[i]):
                     a[k] = Merge.aux[j]
                     j += 1
                 else:
