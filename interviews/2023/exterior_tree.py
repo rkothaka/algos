@@ -51,4 +51,4 @@ if __name__ == "__main__":
     #          J      K
 
     result = left_to_right_exterior_list(root)
-    print(result) # ['J', 'E', 'B', 'A', 'D', 'I', 'K']
+    print(result)  # ['J', 'E', 'B', 'A', 'D', 'I', 'K']
