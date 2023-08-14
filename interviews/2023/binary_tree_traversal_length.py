@@ -1,6 +1,7 @@
 # Compute length of traversal between two nodes in a binary tree
 # cannot use parent links
-from collections import deque
+from collections import deque, namedtuple
+from typing import Optional
 
 
 class TreeNode:
@@ -34,7 +35,7 @@ def traversal_length(root: TreeNode, node1: TreeNode, node2: TreeNode) -> int:
     print(node1_path)
     print(node2_path)
 
-    if node1_path[0] != node2_path[0]:
+    if not node1_path or not node2_path:
         return -1
 
     common_depth = 0
