@@ -6,7 +6,7 @@ class DirectedCycle:
         self.on_stack = [False] * G.V
         self.edge_to = [-1] * G.V
         self.marked = [False] * G.V
-        self.cycle = None
+        self._cycle = None
         for v in range(G.V):
             if not self.marked[v]:
                 self.dfs(G, v)
@@ -34,4 +34,8 @@ class DirectedCycle:
 
     @property
     def cycle(self):
-        return self.cycle
+        return self._cycle
+
+    @cycle.setter
+    def cycle(self, value):
+        self._cycle = value

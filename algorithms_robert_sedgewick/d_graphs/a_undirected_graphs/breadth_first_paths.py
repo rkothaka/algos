@@ -36,4 +36,4 @@ class BreadthFirstPaths:
             v = self.edge_to[v]
             path.append(v)
 
-        return iter(path)
+        return reversed(path)
