@@ -1,8 +1,8 @@
-from binary_trees.binary_tree_node import BinaryTreeNode
+from binary_tree_node import TreeNode
 from collections import deque
 
 
-def tree_traversal(root: BinaryTreeNode):
+def tree_traversal(root: TreeNode):
     preorder = deque()
     inorder = deque()
     postorder = deque()
