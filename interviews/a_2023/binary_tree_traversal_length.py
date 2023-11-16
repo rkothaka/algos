@@ -64,4 +64,4 @@ if __name__ == "__main__":
     # E   F  G    I
     #        |     \
     #        J      K
-    print(traversal_length(A, J, K))
+    print(traversal_length(A, A, K))

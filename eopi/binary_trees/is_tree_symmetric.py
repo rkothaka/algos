@@ -1,7 +1,7 @@
-from binary_trees.binary_tree_node import BinaryTreeNode
+from binary_tree_node import TreeNode
 
 
-def is_symmetric(tree: BinaryTreeNode) -> bool:
+def is_symmetric(tree: TreeNode) -> bool:
     def check_symmetric(subtree_0, subtree_1):
         if not subtree_0 and not subtree_1:
             return True

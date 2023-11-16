@@ -1,9 +1,9 @@
 import collections
 
-from binary_trees.binary_tree_node import BinaryTreeNode
+from binary_tree_node import TreeNode
 
 
-def is_balanced_binary_tree(tree: BinaryTreeNode):
+def is_balanced_binary_tree(tree: TreeNode):
     BalancedStatusWithHeight = collections.namedtuple('BalancedStatusWithHeight', ('balanced', 'height'))
 
     def check_balanced(tree):
