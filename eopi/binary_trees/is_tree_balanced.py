@@ -22,4 +22,4 @@ def is_balanced_binary_tree(tree: TreeNode):
         height = max(left_result.height, right_result.height) + 1
         return BalancedStatusWithHeight(balanced=is_balanced, height=height)
 
-    return check_balanced(tree)
+    return check_balanced(tree).balanced
